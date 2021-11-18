@@ -1,0 +1,120 @@
+Sorular
+-----------------
+
+Soru 1) Aşağıdaki programın çıktısı hangi seçenekte doğru verilmiştir?
+
+  int dizi[7] = {22,1,23,54,75,98,46};
+
+    int max = dizi[0];
+    int min = dizi[0];
+    for (int i =1 ; i < 7; i++) {
+        if (max < dizi[i] )
+                max = dizi[i];       
+        if (min > dizi[i])
+                min = dizi[i];
+    }
+    
+    int topla = max + min;
+
+    printf("%d\n", topla);
+
+    A) 23     B) 68    C) 319     D) 99  
+
+
+Soru 2) Aşağıdaki programın çıktısın hangi seçenekte doğru olarak verilmiştir?
+
+#include <stdio.h>
+
+int main(){
+
+    for (int i =1 ; i < 7; i++) {
+         printf("%d\n", i);
+        if (i == 4)
+                break;
+    }
+
+    return 0;
+}
+
+A) 1,2,3,5,6
+B) 1,2,3,4
+C) 1,2
+D) 1,2,3,4,5,6
+E) 4
+
+
+Soru 3) Aşağıdaki programın çıktısın hangi seçenekte doğru olarak verilmiştir?
+
+#include <stdio.h>
+
+int main(){
+
+    for (int i =1 ; i < 7; i++) {
+        if (i == 3)
+                break;
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+
+A) 12456
+B) 3
+C) 12
+D) 123456
+E) 123 
+
+
+Soru 
+
+#include <stdio.h>
+
+int main(){
+
+    int i = 0;
+    for ( i =1 ; i < 7; i++) {
+
+        if (i == 3)
+                break;
+        printf("%d\n", i);
+        
+    }
+    printf("%d\n", i);
+    return 0;
+}
+
+Soru
+#include <stdio.h>
+
+int main(){
+
+    for (int i =1 ; i < 7; i++) {
+
+        if (i == 3)
+                continue;
+                
+        printf("%d\n", i);
+        
+    }
+
+    return 0;
+}
+
+
+
+Soru
+#include <stdio.h>
+
+int main(){
+
+    for (int i =1 ; i < 7; i++) {
+
+        if (i > 3)
+                continue;
+
+        printf("%d\n", i);
+        
+    }
+
+    return 0;
+}
